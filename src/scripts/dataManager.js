@@ -35,5 +35,8 @@ function setCssThemeToStorage(){
     localStorage.setItem("cssThemes", dataAsJsonString)
 }
 
+function setPageThemeToStorage(){
+    localStorage.setItem("pageTheme", pageTheme);
+}
 
 // Delete localstorage
