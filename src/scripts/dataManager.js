@@ -39,4 +39,12 @@ function setPageThemeToStorage(){
     localStorage.setItem("pageTheme", pageTheme);
 }
 
+
+if(localStorage.getItem("pageTheme") && localStorage.getItem("cssThemes").length > 0) {
+    getStoredCssThemes();
+    getStoredPageTheme();
+} else {
+    setCssThemeToStorage();
+    setPageThemeToStorage();
+}
 // Delete localstorage
